@@ -1,0 +1,5130 @@
+2025-06-13T12:33:19.288047+0900 INFO Start running the script.
+2025-06-13T12:33:19.288283+0900 INFO Processing label: norm, directory: data/wf/wl/collages-1fps-2-2/norm
+2025-06-13T12:33:19.288572+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/24
+2025-06-13T12:33:19.288775+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/24
+2025-06-13T12:33:19.363227+0900 DEBUG Processed 3 frames
+2025-06-13T12:33:19.364403+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:33:37.831365+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:33:37.831857+0900 INFO {
+  "id": "resp_684b9c007fcc8198bf276e0ced0bd69a098434d6fd9cc078",
+  "created_at": 1749785600.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c0478408198bce27a1fe0df78d7098434d6fd9cc078",
+      "summary": [
+        {
+          "text": "**Analyzing vehicle movement**\n\nI'm examining the frames of a road scene. It\u2019s a two-lane road, and I notice a bus in the left lane while we\u2019re in the right. The bus seems to be passing us slowly. In frames 1-4, the bus gradually moves left, nearing our viewpoint. By frame 5, we\u2019ve overtaken the bus, confirming there\u2019s no collision as we see parked red cars along the sides. The camera car continues safely, so I\u2019ll classify this as \"Normal\" with \"Accident_type\": \"None\". Now, I\u2019m ready to format that into JSON.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c1113688198beb3aa1ed956e7e0098434d6fd9cc078",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 2538
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:33:37.832271+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:33:37.832533+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:33:37.832770+0900 DEBUG Completion tokens: 348
+2025-06-13T12:33:37.833017+0900 INFO Start extracting response
+2025-06-13T12:33:37.833343+0900 DEBUG Strip json response:
+2025-06-13T12:33:37.833602+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:33:37.833858+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/19
+2025-06-13T12:33:37.834100+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/19
+2025-06-13T12:33:37.921916+0900 DEBUG Processed 4 frames
+2025-06-13T12:33:37.923043+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:33:55.467104+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:33:55.467498+0900 INFO {
+  "id": "resp_684b9c1289c08199b5fa5ca1ecd0b73e0ebe3d119a7f606b",
+  "created_at": 1749785618.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c1778cc8199a2fc35fbc5f8f08c0ebe3d119a7f606b",
+      "summary": [
+        {
+          "text": "**Analyzing dashcam frames for an accident**\n\nI have a sequence of video frames from a dashcam taken at night, and I need to determine if an accident occurs. The first 15 frames show a car driving down a narrow street. There's a black or grey car in the center lane, with a red sports car briefly seen on the left, potentially moving in the opposite direction. In Frame 2, I spot what seems to be two cars ahead, and in Frame 5, an orange car passes on the left. Let's analyze the details further.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c22566c81998ad5c09d8a0e571a0ebe3d119a7f606b",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 540,
+    "output_tokens_details": {
+      "reasoning_tokens": 512
+    },
+    "total_tokens": 3405
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:33:55.467716+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:33:55.467874+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:33:55.468025+0900 DEBUG Completion tokens: 540
+2025-06-13T12:33:55.468165+0900 INFO Start extracting response
+2025-06-13T12:33:55.468345+0900 DEBUG Strip json response:
+2025-06-13T12:33:55.468522+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:33:55.468674+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/21
+2025-06-13T12:33:55.468821+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/21
+2025-06-13T12:33:55.568146+0900 DEBUG Processed 4 frames
+2025-06-13T12:33:55.569482+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:34:06.492247+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:34:06.492632+0900 INFO {
+  "id": "resp_684b9c23f25881998c0888c31e3f3c27015d780d6805cb56",
+  "created_at": 1749785636.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c29a68c819982f8956e8003be7c015d780d6805cb56",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c2d0aa08199b0c940cdf7b09c9f015d780d6805cb56",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3021
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:34:06.492842+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:34:06.493035+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:34:06.493171+0900 DEBUG Completion tokens: 156
+2025-06-13T12:34:06.493300+0900 INFO Start extracting response
+2025-06-13T12:34:06.493487+0900 DEBUG Strip json response:
+2025-06-13T12:34:06.493625+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:34:06.493760+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/08
+2025-06-13T12:34:06.493887+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/08
+2025-06-13T12:34:06.611954+0900 DEBUG Processed 5 frames
+2025-06-13T12:34:06.612939+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:34:19.093548+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:34:19.093924+0900 INFO {
+  "id": "resp_684b9c2f04608199a1ad8c0be4bea8ee0e1f66e14c671656",
+  "created_at": 1749785647.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c3484bc8199a61c0347a5c33b0a0e1f66e14c671656",
+      "summary": [
+        {
+          "text": "**Analyzing accident potential**\n\nThe user wants me to analyze whether an accident occurred based on frames from a video. In frames 1-8, the ego car follows a white car. By frames 9-12, as we approach an intersection, the traffic light turns red for our direction. Frame 12 indicates this clearly. The car ahead might still be crossing. Starting in frame 13, the ego car turns right. In subsequent frames, no collision or pedestrians are visible. I\u2019ll classify this as Normal, with no accident type.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c3a5d288199b4f787b9cd6e3f540e1f66e14c671656",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3696
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:34:19.094126+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:34:19.094306+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:34:19.094484+0900 DEBUG Completion tokens: 156
+2025-06-13T12:34:19.094634+0900 INFO Start extracting response
+2025-06-13T12:34:19.094818+0900 DEBUG Strip json response:
+2025-06-13T12:34:19.094973+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:34:19.095126+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/01
+2025-06-13T12:34:19.095270+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/01
+2025-06-13T12:34:19.196038+0900 DEBUG Processed 5 frames
+2025-06-13T12:34:19.197090+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:34:28.333344+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:34:28.333754+0900 INFO {
+  "id": "resp_684b9c3b92d8819aa43e2d553bec78600c77abff0d5c928e",
+  "created_at": 1749785659.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c3ffe8c819a9ffdb96a6d778e400c77abff0d5c928e",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c439d8c819a843b5436b714f96b0c77abff0d5c928e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 92,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 3632
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:34:28.333969+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:34:28.334129+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:34:28.334283+0900 DEBUG Completion tokens: 92
+2025-06-13T12:34:28.334447+0900 INFO Start extracting response
+2025-06-13T12:34:28.334633+0900 DEBUG Strip json response:
+2025-06-13T12:34:28.334795+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:34:28.334949+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/04
+2025-06-13T12:34:28.335093+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/04
+2025-06-13T12:34:28.425524+0900 DEBUG Processed 4 frames
+2025-06-13T12:34:28.426584+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:34:45.124112+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:34:45.124593+0900 INFO {
+  "id": "resp_684b9c44bb64819aa8f3434b1bf215e30e0796ddd3c7ff95",
+  "created_at": 1749785668.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c48ce84819aa43cce3e934312610e0796ddd3c7ff95",
+      "summary": [
+        {
+          "text": "**Analyzing potential collision**\n\nI need to look carefully at the frames to determine if an accident occurs. They show a car's view at night, moving along a road lined with parked cars. There are annotations highlighting objects, potentially other vehicles.\n\nFrom the frames, it seems the car is moving past a blue parked car on the left. I'm noticing a red car that's parked; it appears to be opening a door, but it still seems stationary. As we pass, the red car might be crossing the centerline, yet it doesn\u2019t appear to be a collision, since we sailed by without impact.",
+          "type": "summary_text"
+        },
+        {
+          "text": "**Classifying the driving situation**\n\nIn frame 9-10, there's a red parked car, but I realize the parked vehicles are possibly on the left side. By frame 10, another car appears to be moving ahead. Then, in frame 11, I see a small red convertible alongside us, similar to earlier views. It looks like we're close but I need to confirm if there\u2019s a collision.\n\nFrames 12 and 13 show continued normal driving, with no signs of collision or disturbances. So, I think the situation is normal driving around parked cars at night. I\u2019ll craft the JSON response indicating: \n\n```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c546de4819ab7173d8cdaaff8820e0796ddd3c7ff95",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 3213
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:34:45.124872+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:34:45.125101+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:34:45.125291+0900 DEBUG Completion tokens: 348
+2025-06-13T12:34:45.125583+0900 INFO Start extracting response
+2025-06-13T12:34:45.125822+0900 DEBUG Strip json response:
+2025-06-13T12:34:45.126033+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:34:45.126236+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/22
+2025-06-13T12:34:45.126430+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/22
+2025-06-13T12:34:45.257613+0900 DEBUG Processed 4 frames
+2025-06-13T12:34:45.258627+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:34:56.823113+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:34:56.823562+0900 INFO {
+  "id": "resp_684b9c55ac88819aa3759999b666ed2500cfcc5ce66327c2",
+  "created_at": 1749785685.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c59ebf4819a9ae4342f4abd085900cfcc5ce66327c2",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c5ff5f0819a93b23065f59eda3300cfcc5ce66327c2",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 220,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3085
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:34:56.823809+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:34:56.823993+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:34:56.824166+0900 DEBUG Completion tokens: 220
+2025-06-13T12:34:56.824335+0900 INFO Start extracting response
+2025-06-13T12:34:56.824569+0900 DEBUG Strip json response:
+2025-06-13T12:34:56.824751+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:34:56.824924+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/14
+2025-06-13T12:34:56.825104+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/14
+2025-06-13T12:34:56.948326+0900 DEBUG Processed 5 frames
+2025-06-13T12:34:56.948926+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:35:07.512987+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:35:07.513708+0900 INFO {
+  "id": "resp_684b9c615764819b8c8429dd1d2faddf074f9d2f4e93912d",
+  "created_at": 1749785697.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c6676c8819baecfcd71a54e12b1074f9d2f4e93912d",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c6a5710819b8928580282493906074f9d2f4e93912d",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3696
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:35:07.513991+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:35:07.514196+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:35:07.514416+0900 DEBUG Completion tokens: 156
+2025-06-13T12:35:07.514609+0900 INFO Start extracting response
+2025-06-13T12:35:07.514851+0900 DEBUG Strip json response:
+2025-06-13T12:35:07.515132+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:35:07.515407+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/30
+2025-06-13T12:35:07.515602+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/30
+2025-06-13T12:35:07.633173+0900 DEBUG Processed 4 frames
+2025-06-13T12:35:07.633757+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:35:23.232632+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:35:23.233048+0900 INFO {
+  "id": "resp_684b9c6bfafc819ab8082dad9bfc6c1503c9d10956ca3438",
+  "created_at": 1749785708.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c722c3c819ab33bb434d6013b5b03c9d10956ca3438",
+      "summary": [
+        {
+          "text": "**Analyzing video frames for accidents**\n\nI'm reviewing multiple frames from a video, which looks like a dashcam perspective in a 3D simulation with rain. The first 16 frames depict a car driving down the center lane. In frames 1-4, it\u2019s dark out, and I see a car ahead. In frames 6-8, there's a possible parked or passing car on the left. Frame 6 shows a small black car, which might be turning into the path, but no collision is evident. It appears to be in the oncoming lane without colliding.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c7a7348819abc448e783a53e70803c9d10956ca3438",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 3213
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:35:23.233560+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:35:23.233752+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:35:23.233952+0900 DEBUG Completion tokens: 348
+2025-06-13T12:35:23.234152+0900 INFO Start extracting response
+2025-06-13T12:35:23.234409+0900 DEBUG Strip json response:
+2025-06-13T12:35:23.234642+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:35:23.234868+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/10
+2025-06-13T12:35:23.235065+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/10
+2025-06-13T12:35:23.359637+0900 DEBUG Processed 4 frames
+2025-06-13T12:35:23.360739+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:35:34.099597+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:35:34.100032+0900 INFO {
+  "id": "resp_684b9c7bb158819b8a1cf0ef71d7187c00d7fbc976133d7c",
+  "created_at": 1749785723.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c7fd80c819b9c750d8152a16df400d7fbc976133d7c",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9c857924819b81cec5fc4343c78200d7fbc976133d7c",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3021
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:35:34.100404+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:35:34.100700+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:35:34.100911+0900 DEBUG Completion tokens: 156
+2025-06-13T12:35:34.101138+0900 INFO Start extracting response
+2025-06-13T12:35:34.101436+0900 DEBUG Strip json response:
+2025-06-13T12:35:34.101666+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:35:34.101899+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/25
+2025-06-13T12:35:34.102115+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/25
+2025-06-13T12:35:34.207500+0900 DEBUG Processed 5 frames
+2025-06-13T12:35:34.208702+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:36:03.450227+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:36:03.450715+0900 INFO {
+  "id": "resp_684b9c868614819983bc21cff12a9f540efcb70a54a2b87e",
+  "created_at": 1749785734.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9c8c320081998e1890d303b283750efcb70a54a2b87e",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ca191a08199944ee8cc8dbc11ed0efcb70a54a2b87e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 732,
+    "output_tokens_details": {
+      "reasoning_tokens": 704
+    },
+    "total_tokens": 4272
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:36:03.450986+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:36:03.451166+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:36:03.451333+0900 DEBUG Completion tokens: 732
+2025-06-13T12:36:03.451513+0900 INFO Start extracting response
+2025-06-13T12:36:03.451714+0900 DEBUG Strip json response:
+2025-06-13T12:36:03.451886+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:36:03.452055+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/09
+2025-06-13T12:36:03.452214+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/09
+2025-06-13T12:36:03.576569+0900 DEBUG Processed 5 frames
+2025-06-13T12:36:03.577582+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:36:17.105599+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:36:17.106160+0900 INFO {
+  "id": "resp_684b9ca3ed04819ab44d418d12f32b8a0aa41b6dfa24481e",
+  "created_at": 1749785764.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9ca8a8c0819aa92e373b895f2a520aa41b6dfa24481e",
+      "summary": [
+        {
+          "text": "**Crafting JSON output**\n\nIt looks like the vehicles are overtaking safely without any accidents. That means I can classify this situation as \"Normal.\" According to the requirements, even if it's classified as Normal, I still need to produce a JSON output that includes \"class: Normal\" and \"Accident_type: None.\" \n\nAlright, let\u2019s put this JSON together based on those specifications. This will ensure the information is clear and structured properly.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9cb071e0819a925f3ae823c4768e0aa41b6dfa24481e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 220,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3760
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:36:17.106554+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:36:17.106792+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:36:17.106958+0900 DEBUG Completion tokens: 220
+2025-06-13T12:36:17.107112+0900 INFO Start extracting response
+2025-06-13T12:36:17.107303+0900 DEBUG Strip json response:
+2025-06-13T12:36:17.107493+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:36:17.107700+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/12
+2025-06-13T12:36:17.107881+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/12
+2025-06-13T12:36:17.197220+0900 DEBUG Processed 3 frames
+2025-06-13T12:36:17.198488+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:36:35.460559+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:36:35.460959+0900 INFO {
+  "id": "resp_684b9cb180b881988b405751b732c08107ecec5b2615dd55",
+  "created_at": 1749785777.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9cb448b48198b702e13dd11df14507ecec5b2615dd55",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9cc2ab848198acc5c15a3264e5da07ecec5b2615dd55",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 476,
+    "output_tokens_details": {
+      "reasoning_tokens": 448
+    },
+    "total_tokens": 2666
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:36:35.461184+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:36:35.461386+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:36:35.461548+0900 DEBUG Completion tokens: 476
+2025-06-13T12:36:35.461723+0900 INFO Start extracting response
+2025-06-13T12:36:35.461938+0900 DEBUG Strip json response:
+2025-06-13T12:36:35.462097+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:36:35.462254+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/18
+2025-06-13T12:36:35.462425+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/18
+2025-06-13T12:36:35.560787+0900 DEBUG Processed 4 frames
+2025-06-13T12:36:35.561984+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:36:44.594676+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:36:44.595045+0900 INFO {
+  "id": "resp_684b9cc3dd38819aa7893e4092de19a0003bb1dd87ec32a1",
+  "created_at": 1749785796.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9cc8b384819a9cca4819afda3fb3003bb1dd87ec32a1",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ccbfb74819ab036a5f154500d43003bb1dd87ec32a1",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3021
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:36:44.595251+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:36:44.595448+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:36:44.595607+0900 DEBUG Completion tokens: 156
+2025-06-13T12:36:44.595751+0900 INFO Start extracting response
+2025-06-13T12:36:44.595929+0900 DEBUG Strip json response:
+2025-06-13T12:36:44.596084+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:36:44.596231+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/07
+2025-06-13T12:36:44.596382+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/07
+2025-06-13T12:36:44.746739+0900 DEBUG Processed 6 frames
+2025-06-13T12:36:44.747682+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:37:08.321792+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:37:08.322300+0900 INFO {
+  "id": "resp_684b9ccd220c819a8ff206c017851c720185c3753ff4d8a0",
+  "created_at": 1749785805.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9cd47758819aa19253f7b9d923930185c3753ff4d8a0",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ce38d10819a973cbe94c7c296f20185c3753ff4d8a0",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4215,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 732,
+    "output_tokens_details": {
+      "reasoning_tokens": 704
+    },
+    "total_tokens": 4947
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:37:08.322606+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:37:08.322880+0900 DEBUG Prompt tokens: 4215
+2025-06-13T12:37:08.323140+0900 DEBUG Completion tokens: 732
+2025-06-13T12:37:08.323426+0900 INFO Start extracting response
+2025-06-13T12:37:08.323748+0900 DEBUG Strip json response:
+2025-06-13T12:37:08.324021+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:37:08.324282+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/06
+2025-06-13T12:37:08.324520+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/06
+2025-06-13T12:37:08.441347+0900 DEBUG Processed 5 frames
+2025-06-13T12:37:08.442043+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:37:31.708622+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:37:31.709093+0900 INFO {
+  "id": "resp_684b9ce4d108819bbbd092c624bd7f910f1c427164b7b8ec",
+  "created_at": 1749785828.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9cebfe80819bbd352d03942d5c0d0f1c427164b7b8ec",
+      "summary": [
+        {
+          "text": "**Inspecting collision frames**\n\nI need to check the frames for any collisions in sequences 1-20 from the car's perspective as it drives through the city. The goal is to see if our camera car collides with another vehicle, a pedestrian, or encounters accidents ahead. In the frames, a green square signals safe areas while red squares indicate potential collisions. In frames 13-16, there\u2019s a red square that could suggest an accident. I\u2019ll analyze the details from those frames where the scene transitions show varying traffic conditions.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9cfa1424819b87b4c2620f6800fe0f1c427164b7b8ec",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 476,
+    "output_tokens_details": {
+      "reasoning_tokens": 448
+    },
+    "total_tokens": 4016
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:37:31.709355+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:37:31.709577+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:37:31.709770+0900 DEBUG Completion tokens: 476
+2025-06-13T12:37:31.709963+0900 INFO Start extracting response
+2025-06-13T12:37:31.710193+0900 DEBUG Strip json response:
+2025-06-13T12:37:31.710400+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:37:31.710597+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/28
+2025-06-13T12:37:31.710782+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/28
+2025-06-13T12:37:31.858852+0900 DEBUG Processed 5 frames
+2025-06-13T12:37:31.859183+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:37:42.565366+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:37:42.565798+0900 INFO {
+  "id": "resp_684b9cfc3308819987b9b78412c5b59703fcac8bbdfde330",
+  "created_at": 1749785852.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d01d24c8199a12775aadff65e6503fcac8bbdfde330",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d054cf481998663497fcf84424103fcac8bbdfde330",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3696
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:37:42.566031+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:37:42.566207+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:37:42.566410+0900 DEBUG Completion tokens: 156
+2025-06-13T12:37:42.566614+0900 INFO Start extracting response
+2025-06-13T12:37:42.566846+0900 DEBUG Strip json response:
+2025-06-13T12:37:42.567018+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:37:42.567187+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/16
+2025-06-13T12:37:42.567353+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/16
+2025-06-13T12:37:42.668059+0900 DEBUG Processed 3 frames
+2025-06-13T12:37:42.668459+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:37:55.664622+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:37:55.665043+0900 INFO {
+  "id": "resp_684b9d06f9b88199b8bf81e0bdfadd1c0302cd2d7871bafe",
+  "created_at": 1749785863.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d0acdc08199929c98fc0fc98f000302cd2d7871bafe",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d12aa308199a9329e55e8be0c1e0302cd2d7871bafe",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 2346
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:37:55.665254+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:37:55.665441+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:37:55.665639+0900 DEBUG Completion tokens: 156
+2025-06-13T12:37:55.665831+0900 INFO Start extracting response
+2025-06-13T12:37:55.666052+0900 DEBUG Strip json response:
+2025-06-13T12:37:55.666222+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:37:55.666395+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/17
+2025-06-13T12:37:55.666560+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/17
+2025-06-13T12:37:55.779174+0900 DEBUG Processed 4 frames
+2025-06-13T12:37:55.779534+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:38:13.153853+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:38:13.154223+0900 INFO {
+  "id": "resp_684b9d145fbc819b8b14574f9b1407720730f85256b8cd64",
+  "created_at": 1749785876.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d1949b8819bbf96fa6dfbca50050730f85256b8cd64",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d23c0bc819ba0470b1ed48b033a0730f85256b8cd64",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 284,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 3149
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:38:13.154433+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:38:13.154598+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:38:13.154749+0900 DEBUG Completion tokens: 284
+2025-06-13T12:38:13.154895+0900 INFO Start extracting response
+2025-06-13T12:38:13.155075+0900 DEBUG Strip json response:
+2025-06-13T12:38:13.155229+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:38:13.155413+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/15
+2025-06-13T12:38:13.155570+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/15
+2025-06-13T12:38:13.283330+0900 DEBUG Processed 5 frames
+2025-06-13T12:38:13.283991+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:38:35.989801+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:38:35.990195+0900 INFO {
+  "id": "resp_684b9d25a4308198b8a0f995461dd0510ef8cd111f6410f1",
+  "created_at": 1749785893.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d2a7f2881988edf4f02355575250ef8cd111f6410f1",
+      "summary": [
+        {
+          "text": "**Analyzing collision potential**\n\nI'm looking at the frames from a dashcam view to see if any collisions occur. In frames 1 and 2, I'm observing a straight path with a green target ahead and white SUVs passing on the left. By frames 3 and 4, a white SUV crosses into our lane but seems to swerve past, likely due to oncoming traffic. It gets close but doesn't hit us as we continue unaffected. In frames 5 and 6, everything appears stable, and the white SUV is gone.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d3acfb48198a2f6b624374ba2bf0ef8cd111f6410f1",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 412,
+    "output_tokens_details": {
+      "reasoning_tokens": 384
+    },
+    "total_tokens": 3952
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:38:35.990453+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:38:35.990626+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:38:35.990810+0900 DEBUG Completion tokens: 412
+2025-06-13T12:38:35.990963+0900 INFO Start extracting response
+2025-06-13T12:38:35.991167+0900 DEBUG Strip json response:
+2025-06-13T12:38:35.991385+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:38:35.991629+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/20
+2025-06-13T12:38:35.991868+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/20
+2025-06-13T12:38:36.105482+0900 DEBUG Processed 5 frames
+2025-06-13T12:38:36.106610+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:39:09.099056+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:39:09.099525+0900 INFO {
+  "id": "resp_684b9d3c6e84819990f4b6fdffb620a3083af8dd26cdd06c",
+  "created_at": 1749785916.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d41a0ec8199a5c7452ea5fa4c0c083af8dd26cdd06c",
+      "summary": [
+        {
+          "text": "**Analyzing accident frames**\n\nThe user is asking for an analysis of a driving sequence in JSON format, focusing on whether there's an accident. I've observed the frames: initially, it's a rainy, foggy scene with the ego vehicle moving past parked cars, including a stationary black sedan. As the drive continues at night, no collisions occur with other vehicles or pedestrians. It seems to be a normal drive, so I conclude: Class = Normal, Accident_type = None. I'll ensure to double-check for any collisions!",
+          "type": "summary_text"
+        },
+        {
+          "text": "**Reviewing the frames for collisions**\n\nIn frame 6, the black sedan is angled into the lane but doesn't appear to move, so it looks parked. The ego vehicle passes by safely. By frame 17, the taxi might be slightly into the lane, but again, there are no collisions, and no pedestrians are involved. It seems clear that there isn't an accident here. Therefore, I'll return a JSON response indicating: Class is \"Normal\" and Accident_type is \"None.\" I'll format it properly within a markdown code block.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d5c87288199a45b48da55714ca7083af8dd26cdd06c",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 284,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 3824
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:39:09.099793+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:39:09.100046+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:39:09.100270+0900 DEBUG Completion tokens: 284
+2025-06-13T12:39:09.100518+0900 INFO Start extracting response
+2025-06-13T12:39:09.100807+0900 DEBUG Strip json response:
+2025-06-13T12:39:09.101052+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:39:09.101302+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/11
+2025-06-13T12:39:09.101540+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/11
+2025-06-13T12:39:09.195962+0900 DEBUG Processed 4 frames
+2025-06-13T12:39:09.196918+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:39:24.214028+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:39:24.214352+0900 INFO {
+  "id": "resp_684b9d5d9e60819a97d600a8b567c89e06eb3fa9211fcdac",
+  "created_at": 1749785949.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d6302f0819a9a93b69d40b5083c06eb3fa9211fcdac",
+      "summary": [
+        {
+          "text": "**Evaluating accident simulation**\n\nI'm analyzing a driving simulation to determine if an accident occurs. From frames 1-16, I see no collisions; the ego car is following behind a green-marked car without any pedestrians around. A blue van moves past, but there\u2019s no crash. I\u2019ll double-check each frame. \n\nIn frame 1, the blue van crosses but without collision risk. In later frames, it seems the van is just parked or safely crossing. Overall, I classify the situation as normal with no accidents detected.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d6af734819aa947a50fccd95fa306eb3fa9211fcdac",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 220,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3085
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:39:24.214550+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:39:24.214683+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:39:24.214810+0900 DEBUG Completion tokens: 220
+2025-06-13T12:39:24.214933+0900 INFO Start extracting response
+2025-06-13T12:39:24.215097+0900 DEBUG Strip json response:
+2025-06-13T12:39:24.215226+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:39:24.215355+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/29
+2025-06-13T12:39:24.215492+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/29
+2025-06-13T12:39:24.359230+0900 DEBUG Processed 6 frames
+2025-06-13T12:39:24.360185+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:39:41.879587+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:39:41.879981+0900 INFO {
+  "id": "resp_684b9d6cb9c48198a65f4985376a818b09b49cc33aa4966e",
+  "created_at": 1749785964.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d72b8a481989cc8f36daafe3e5609b49cc33aa4966e",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d7cf368819888bf631b78dea08109b49cc33aa4966e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4215,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 284,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 4499
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:39:41.880224+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:39:41.880410+0900 DEBUG Prompt tokens: 4215
+2025-06-13T12:39:41.880575+0900 DEBUG Completion tokens: 284
+2025-06-13T12:39:41.880731+0900 INFO Start extracting response
+2025-06-13T12:39:41.880930+0900 DEBUG Strip json response:
+2025-06-13T12:39:41.881094+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:39:41.881255+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/13
+2025-06-13T12:39:41.881429+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/13
+2025-06-13T12:39:41.957730+0900 DEBUG Processed 3 frames
+2025-06-13T12:39:41.958869+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:39:51.382038+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:39:51.382789+0900 INFO {
+  "id": "resp_684b9d7e79a8819b8612d7119c77d7d80d243ca396dbc307",
+  "created_at": 1749785982.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d824b74819b94acc6b707cdf4bb0d243ca396dbc307",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d86bd84819b9e801f93248bdb450d243ca396dbc307",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 2346
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:39:51.383025+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:39:51.383188+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:39:51.383386+0900 DEBUG Completion tokens: 156
+2025-06-13T12:39:51.383552+0900 INFO Start extracting response
+2025-06-13T12:39:51.383769+0900 DEBUG Strip json response:
+2025-06-13T12:39:51.383959+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:39:51.384117+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/02
+2025-06-13T12:39:51.384263+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/02
+2025-06-13T12:39:51.463271+0900 DEBUG Processed 4 frames
+2025-06-13T12:39:51.463643+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:40:01.662139+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:40:01.662565+0900 INFO {
+  "id": "resp_684b9d87be9c819a8824aa78f4fb806000232aa77f5017bf",
+  "created_at": 1749785991.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d8bcad8819a99c90d424374848200232aa77f5017bf",
+      "summary": [
+        {
+          "text": "**Classifying the footage**\n\nI'm working with a sequence showing nighttime driving on a wet road with parked cars. In the first fifteen frames, there doesn\u2019t seem to be a collision. At frame 2, a left car is parked, while by frame 7, another car approaches without crashing. Therefore, I'll classify this as \"Normal.\" Now I need to format my output as JSON like this: ```json { \"Class\": \"Normal\", \"Accident_type\": \"None\" }```. That should do it!",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9d9152f0819a9262c98d0beee2ba00232aa77f5017bf",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 92,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 2957
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:40:01.662773+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:40:01.662931+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:40:01.663080+0900 DEBUG Completion tokens: 92
+2025-06-13T12:40:01.663225+0900 INFO Start extracting response
+2025-06-13T12:40:01.663426+0900 DEBUG Strip json response:
+2025-06-13T12:40:01.663641+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:40:01.663800+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/05
+2025-06-13T12:40:01.663952+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/05
+2025-06-13T12:40:01.800413+0900 DEBUG Processed 6 frames
+2025-06-13T12:40:01.800746+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:40:17.456317+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:40:17.456709+0900 INFO {
+  "id": "resp_684b9d922738819abfc34935b3c943bb001e199923905c6b",
+  "created_at": 1749786002.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9d98252c819a8310c845d156046e001e199923905c6b",
+      "summary": [
+        {
+          "text": "**Evaluating car behavior**\n\nI'm assessing a situation where the player's car doesn't crash at all. The car in front might have swerved a bit, and a blue van merged without causing any contact. So, I think I'll classify this as \"Normal\" since there are no accidents here. The JSON representation reflects that conclusion, stating the classification as \"Normal\" and the accident type as \"None.\" Now, I\u2019ll work on crafting the answer with this information.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9da0a754819a99fb76bf505aba14001e199923905c6b",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4215,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 220,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 4435
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:40:17.456922+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:40:17.457080+0900 DEBUG Prompt tokens: 4215
+2025-06-13T12:40:17.457244+0900 DEBUG Completion tokens: 220
+2025-06-13T12:40:17.457431+0900 INFO Start extracting response
+2025-06-13T12:40:17.457618+0900 DEBUG Strip json response:
+2025-06-13T12:40:17.457769+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:40:17.457919+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/26
+2025-06-13T12:40:17.458060+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/26
+2025-06-13T12:40:17.562189+0900 DEBUG Processed 4 frames
+2025-06-13T12:40:17.562513+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:40:48.464912+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:40:48.465309+0900 INFO {
+  "id": "resp_684b9da267c0819bb5eaec9058cacdde02f8c4d73a3b6d92",
+  "created_at": 1749786018.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9da67cec819bac216b4d24b9a90702f8c4d73a3b6d92",
+      "summary": [
+        {
+          "text": "**Analyzing accident frames**\n\nI\u2019m analyzing frames from simulated footage inside a driving car, capturing city street scenes with parked vehicles. It looks like we need to inspect each frame carefully for potential accidents.\n\nIn frame 1, a white sedan is pulling out from the left, possibly crossing our path. Frame 2 shows the white car getting closer but not contacting us. By frame 3, it has receded. The convertible in frame 4 is no longer there, indicating no accident. Moving on, a black SUV partially emerges in frame 5, but we pass safely. In frame 6, the SUV goes behind us, followed by blue vans parked.",
+          "type": "summary_text"
+        },
+        {
+          "text": "**Inspecting for potential accidents**\n\nIn frames 9 to 11, I see only parked vans and many vehicles. Frames 12 to 16 show some traffic, with a small white car ahead, but there's no sign of collisions with other vehicles or pedestrians. It seems normal, yet I need to check earlier frames just in case.\n\nIn frame 1, the convertible seems on a collision path, but in frame 2, it looks like we\u2019re just brushing by. By frame 3, it\u2019s gone from view, so no crash occurred there. Analyzing frames 5 and 6, a black SUV enters our lane, but we pass without collision. Thus, I\u2019m classifying this incident as normal and will output it accordingly.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9dbfdf0c819bb5f7339498cafc0c02f8c4d73a3b6d92",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 604,
+    "output_tokens_details": {
+      "reasoning_tokens": 576
+    },
+    "total_tokens": 3469
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:40:48.465636+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:40:48.465812+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:40:48.465968+0900 DEBUG Completion tokens: 604
+2025-06-13T12:40:48.466149+0900 INFO Start extracting response
+2025-06-13T12:40:48.466368+0900 DEBUG Strip json response:
+2025-06-13T12:40:48.466550+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:40:48.466766+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/27
+2025-06-13T12:40:48.466932+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/27
+2025-06-13T12:40:48.579916+0900 DEBUG Processed 5 frames
+2025-06-13T12:40:48.580271+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:41:03.174020+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:41:03.174542+0900 INFO {
+  "id": "resp_684b9dc100b8819ab109ff054e12069c0221b6ffaaea2877",
+  "created_at": 1749786049.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9dc7c89c819a9f2f1029a330d9150221b6ffaaea2877",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9dce322c819ab49420ad7562a12f0221b6ffaaea2877",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 284,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 3824
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:41:03.174837+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:41:03.175074+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:41:03.175303+0900 DEBUG Completion tokens: 284
+2025-06-13T12:41:03.175558+0900 INFO Start extracting response
+2025-06-13T12:41:03.175832+0900 DEBUG Strip json response:
+2025-06-13T12:41:03.176121+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:41:03.176509+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/03
+2025-06-13T12:41:03.176863+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/03
+2025-06-13T12:41:03.271862+0900 DEBUG Processed 4 frames
+2025-06-13T12:41:03.272170+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:41:13.270187+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:41:13.270588+0900 INFO {
+  "id": "resp_684b9dcf93388198aaacc5cfd13663b10a734b2d67275ced",
+  "created_at": 1749786063.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9dd4d090819881e8098e8232c9a90a734b2d67275ced",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9dd8bce48198986534183fac01ef0a734b2d67275ced",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 156,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3021
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:41:13.270788+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:41:13.270952+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:41:13.271140+0900 DEBUG Completion tokens: 156
+2025-06-13T12:41:13.271296+0900 INFO Start extracting response
+2025-06-13T12:41:13.271501+0900 DEBUG Strip json response:
+2025-06-13T12:41:13.271661+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:41:13.271822+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/norm/23
+2025-06-13T12:41:13.271998+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/norm/23
+2025-06-13T12:41:13.359803+0900 DEBUG Processed 4 frames
+2025-06-13T12:41:13.360113+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:41:25.775269+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:41:25.775679+0900 INFO {
+  "id": "resp_684b9dd9b138819b9cb7ad5922788b090caedb13e4990f3f",
+  "created_at": 1749786073.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9dde3480819ba6da7d74f3dc84190caedb13e4990f3f",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9de4de14819b91f6def19983a7150caedb13e4990f3f",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 220,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3085
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:41:25.775902+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:41:25.776075+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:41:25.776231+0900 DEBUG Completion tokens: 220
+2025-06-13T12:41:25.776428+0900 INFO Start extracting response
+2025-06-13T12:41:25.776651+0900 DEBUG Strip json response:
+2025-06-13T12:41:25.776816+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:41:25.776979+0900 INFO Processing label: ped, directory: data/wf/wl/collages-1fps-2-2/ped
+2025-06-13T12:41:25.777189+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/08
+2025-06-13T12:41:25.777351+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/08
+2025-06-13T12:41:25.884045+0900 DEBUG Processed 4 frames
+2025-06-13T12:41:25.884846+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:41:36.809770+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:41:36.810177+0900 INFO {
+  "id": "resp_684b9de639e0819882ff3e90aa0b864b04c431aafae83645",
+  "created_at": 1749786086.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9deab8d881988bd2c98b21049ec704c431aafae83645",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9defd94481988287b393d3cb1dcf04c431aafae83645",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3022
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:41:36.810405+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:41:36.810587+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:41:36.810751+0900 DEBUG Completion tokens: 157
+2025-06-13T12:41:36.810910+0900 INFO Start extracting response
+2025-06-13T12:41:36.811108+0900 DEBUG Strip json response:
+2025-06-13T12:41:36.811278+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:41:36.811462+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/01
+2025-06-13T12:41:36.811622+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/01
+2025-06-13T12:41:36.917869+0900 DEBUG Processed 4 frames
+2025-06-13T12:41:36.918847+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:41:55.006733+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:41:55.007098+0900 INFO {
+  "id": "resp_684b9df145848199ac4c0ec1e961a05e0a2a152bccdedde0",
+  "created_at": 1749786097.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9df564cc8199928647faa0cba7a70a2a152bccdedde0",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e0278ac819984c77762d23667340a2a152bccdedde0",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 477,
+    "output_tokens_details": {
+      "reasoning_tokens": 448
+    },
+    "total_tokens": 3342
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:41:55.007301+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:41:55.007483+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:41:55.007627+0900 DEBUG Completion tokens: 477
+2025-06-13T12:41:55.007765+0900 INFO Start extracting response
+2025-06-13T12:41:55.007945+0900 DEBUG Strip json response:
+2025-06-13T12:41:55.008094+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:41:55.008242+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/04
+2025-06-13T12:41:55.008391+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/04
+2025-06-13T12:41:55.076191+0900 DEBUG Processed 3 frames
+2025-06-13T12:41:55.077075+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:42:03.770781+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:42:03.771121+0900 INFO {
+  "id": "resp_684b9e035fc8819bbf7131a51141a3640b00640452ae01ac",
+  "created_at": 1749786115.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e0709d4819b9a407c9df2bcdae60b00640452ae01ac",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e0aa298819bac7d083a78044c1c0b00640452ae01ac",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 93,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 2283
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:42:03.771316+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:42:03.771481+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:42:03.771620+0900 DEBUG Completion tokens: 93
+2025-06-13T12:42:03.771754+0900 INFO Start extracting response
+2025-06-13T12:42:03.771931+0900 DEBUG Strip json response:
+2025-06-13T12:42:03.772073+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:42:03.772212+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/14
+2025-06-13T12:42:03.772343+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/14
+2025-06-13T12:42:03.870015+0900 DEBUG Processed 4 frames
+2025-06-13T12:42:03.870940+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:42:15.719116+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:42:15.719497+0900 INFO {
+  "id": "resp_684b9e0c47548199bf0b40b314b4ef480df0d3ae5b6070df",
+  "created_at": 1749786124.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e10c1d8819986715b46aac3ebe20df0d3ae5b6070df",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e170b648199b338f20bf9bc9dcd0df0d3ae5b6070df",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3022
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:42:15.719720+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:42:15.719883+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:42:15.720036+0900 DEBUG Completion tokens: 157
+2025-06-13T12:42:15.720186+0900 INFO Start extracting response
+2025-06-13T12:42:15.720379+0900 DEBUG Strip json response:
+2025-06-13T12:42:15.720541+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:42:15.720703+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/10
+2025-06-13T12:42:15.720851+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/10
+2025-06-13T12:42:15.826982+0900 DEBUG Processed 4 frames
+2025-06-13T12:42:15.827308+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:42:22.999465+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:42:22.999925+0900 INFO {
+  "id": "resp_684b9e182b40819a8b2a6b0e918b039506aef847beb24b31",
+  "created_at": 1749786136.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e1c22c4819abf23eaa29cb7c82a06aef847beb24b31",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e1e26f4819a87d3afbc86d60f2b06aef847beb24b31",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 93,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 2958
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:42:23.000152+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:42:23.000323+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:42:23.000512+0900 DEBUG Completion tokens: 93
+2025-06-13T12:42:23.000674+0900 INFO Start extracting response
+2025-06-13T12:42:23.000867+0900 DEBUG Strip json response:
+2025-06-13T12:42:23.001029+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:42:23.001188+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/09
+2025-06-13T12:42:23.001337+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/09
+2025-06-13T12:42:23.081008+0900 DEBUG Processed 3 frames
+2025-06-13T12:42:23.081898+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:42:36.395060+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:42:36.395613+0900 INFO {
+  "id": "resp_684b9e1fa448819ba59c71dae353947b03080fddf037f108",
+  "created_at": 1749786143.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e22aaec819b9d56404a946ede9003080fddf037f108",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e2bcbe8819bb7e66a91a0e1017303080fddf037f108",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 2475
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:42:36.395824+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:42:36.395986+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:42:36.396142+0900 DEBUG Completion tokens: 285
+2025-06-13T12:42:36.396304+0900 INFO Start extracting response
+2025-06-13T12:42:36.396523+0900 DEBUG Strip json response:
+2025-06-13T12:42:36.396727+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:42:36.396923+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/12
+2025-06-13T12:42:36.397077+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/12
+2025-06-13T12:42:36.475248+0900 DEBUG Processed 3 frames
+2025-06-13T12:42:36.475900+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:42:48.930662+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:42:48.931041+0900 INFO {
+  "id": "resp_684b9e2ccacc819ab98d319c5d5c7ec50bba2f20cfac8cbd",
+  "created_at": 1749786156.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e30c224819a98e1e2e8bde38d730bba2f20cfac8cbd",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e37e4c4819aae5d92a7559f18d00bba2f20cfac8cbd",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 2475
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:42:48.931264+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:42:48.931445+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:42:48.931598+0900 DEBUG Completion tokens: 285
+2025-06-13T12:42:48.931744+0900 INFO Start extracting response
+2025-06-13T12:42:48.931929+0900 DEBUG Strip json response:
+2025-06-13T12:42:48.932082+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:42:48.932234+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/07
+2025-06-13T12:42:48.932395+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/07
+2025-06-13T12:42:49.014504+0900 DEBUG Processed 4 frames
+2025-06-13T12:42:49.015179+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:43:00.103527+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:43:00.104019+0900 INFO {
+  "id": "resp_684b9e39515c819a976ee0dc32bf8a2c0ef7c5d8fdc2170b",
+  "created_at": 1749786169.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e3cfdf0819a8d05f7a9cd67c89a0ef7c5d8fdc2170b",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e43844c819ab3f79b35e8eecb390ef7c5d8fdc2170b",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3086
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:43:00.104296+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:43:00.104536+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:43:00.104698+0900 DEBUG Completion tokens: 221
+2025-06-13T12:43:00.104853+0900 INFO Start extracting response
+2025-06-13T12:43:00.105044+0900 DEBUG Strip json response:
+2025-06-13T12:43:00.105205+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:43:00.105387+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/06
+2025-06-13T12:43:00.105543+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/06
+2025-06-13T12:43:00.231861+0900 DEBUG Processed 5 frames
+2025-06-13T12:43:00.232490+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:43:14.473153+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:43:14.473554+0900 INFO {
+  "id": "resp_684b9e44981c819880a2e66f4b2da16a00143350c2903588",
+  "created_at": 1749786180.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e4b2bf481988aadc9cc52cfa81300143350c2903588",
+      "summary": [
+        {
+          "text": "**Reviewing frame details**\n\nI'm analyzing the frames of the incident. Frames 1-4 just show the road with no significant events. In frames 5-7, there's a white car that appears to pull out but there's no collision yet. Our perspective is from the hood of our vehicle. Starting from frame 8, there are pedestrians crossing. By frames 13-16, they are right in front of our car, and it looks like we don\u2019t stop. Frame 17 confirms the collision, leading to the classification of this incident as an accident type A.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e51e8948198be839121effa678f00143350c2903588",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3761
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:43:14.473780+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:43:14.473949+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:43:14.474104+0900 DEBUG Completion tokens: 221
+2025-06-13T12:43:14.474255+0900 INFO Start extracting response
+2025-06-13T12:43:14.474462+0900 DEBUG Strip json response:
+2025-06-13T12:43:14.474625+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:43:14.474786+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/15
+2025-06-13T12:43:14.474936+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/15
+2025-06-13T12:43:14.565863+0900 DEBUG Processed 4 frames
+2025-06-13T12:43:14.566433+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:43:26.780923+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:43:26.781319+0900 INFO {
+  "id": "resp_684b9e52db30819a8d83a65d17eb48b70b635fc642cd115a",
+  "created_at": 1749786195.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e577764819ab77185a9876983a20b635fc642cd115a",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e5dda00819a8bfde72f13bf37450b635fc642cd115a",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3022
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:43:26.781561+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:43:26.781737+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:43:26.781898+0900 DEBUG Completion tokens: 157
+2025-06-13T12:43:26.782055+0900 INFO Start extracting response
+2025-06-13T12:43:26.782249+0900 DEBUG Strip json response:
+2025-06-13T12:43:26.782437+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:43:26.782607+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/11
+2025-06-13T12:43:26.782765+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/11
+2025-06-13T12:43:26.864822+0900 DEBUG Processed 4 frames
+2025-06-13T12:43:26.865443+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:43:42.151203+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:43:42.151612+0900 INFO {
+  "id": "resp_684b9e5f29f4819ba1a1cc9e1c497d6e0426d5615c1c2527",
+  "created_at": 1749786207.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e634064819bb83ddc7cfba672fd0426d5615c1c2527",
+      "summary": [
+        {
+          "text": "**Inspecting accident frames**\n\nI need to analyze the frames carefully. The beginning shows cars driving, then around frames 5 to 8, we see a crosswalk with pedestrians crossing from right to left. By frames 9 to 12, it seems people lean against the car hood, indicating a possible collision. Frame 12 shows an empty road before frame 13 reveals blood. I zoom in for details; the scene confirms two men were hit. We classify this as \"Accident\" Type A. I'll prepare the JSON now.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e6d9048819bbcdaa91e1294442e0426d5615c1c2527",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 413,
+    "output_tokens_details": {
+      "reasoning_tokens": 384
+    },
+    "total_tokens": 3278
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:43:42.151825+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:43:42.151993+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:43:42.152161+0900 DEBUG Completion tokens: 413
+2025-06-13T12:43:42.152311+0900 INFO Start extracting response
+2025-06-13T12:43:42.152518+0900 DEBUG Strip json response:
+2025-06-13T12:43:42.152675+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:43:42.152832+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/13
+2025-06-13T12:43:42.152986+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/13
+2025-06-13T12:43:42.249640+0900 DEBUG Processed 4 frames
+2025-06-13T12:43:42.250451+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:43:53.951328+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:43:53.951723+0900 INFO {
+  "id": "resp_684b9e6e8b1c819aa6adec0455651d85047d9d55e59e8f69",
+  "created_at": 1749786222.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e74eb80819a9516b518eaf1774b047d9d55e59e8f69",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e795444819a9ad3f12fd884d75b047d9d55e59e8f69",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 3086
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:43:53.951937+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:43:53.952101+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:43:53.952261+0900 DEBUG Completion tokens: 221
+2025-06-13T12:43:53.952427+0900 INFO Start extracting response
+2025-06-13T12:43:53.952617+0900 DEBUG Strip json response:
+2025-06-13T12:43:53.952776+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:43:53.952938+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/02
+2025-06-13T12:43:53.953088+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/02
+2025-06-13T12:43:54.027451+0900 DEBUG Processed 4 frames
+2025-06-13T12:43:54.028142+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:44:20.487661+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:44:20.488082+0900 INFO {
+  "id": "resp_684b9e7a2fe88199bdd3a5609d19e4e50776d8156e4f97fe",
+  "created_at": 1749786234.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e7ec1d88199b64c7d0720392fef0776d8156e4f97fe",
+      "summary": [
+        {
+          "text": "**Analyzing the frames**\n\nI'm diving into the frames, starting at a dark night scene with green LED dots, possibly bike lights. In later frames (#7, #8, #9), people show up, maybe crossing the road with flashlights. In frame 9, I spot two people, one crouching\u2014it looks like they might be near an accident scene. The ego car has stopped, but hasn't crashed. I'm wondering if we witness the aftermath of an accident as we inspect the sequence more closely.",
+          "type": "summary_text"
+        },
+        {
+          "text": "**Analyzing collision events**\n\nI'm trying to figure out if an accident occurs in the video based on the camera's perspective. So far, it looks like we don't see a direct collision, just something happening on the roadside. I'm considering if there could be a Type A accident, where a car crashes into pedestrians. The frames show a white car and a grey car, but no obvious crashes. \n\nMaybe the dashcam is capturing a scenario with a bicyclist and reflectors at night. In later frames, people gather around what seems to be an injured rider. I suspect a collision happened earlier, but the darkness complicates our view.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9e93ee9c8199b4fe5020b7eabde40776d8156e4f97fe",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1309,
+    "output_tokens_details": {
+      "reasoning_tokens": 1280
+    },
+    "total_tokens": 4174
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:44:20.488320+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:44:20.488506+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:44:20.488665+0900 DEBUG Completion tokens: 1309
+2025-06-13T12:44:20.488875+0900 INFO Start extracting response
+2025-06-13T12:44:20.489092+0900 DEBUG Strip json response:
+2025-06-13T12:44:20.489255+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:44:20.489450+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/05
+2025-06-13T12:44:20.489640+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/05
+2025-06-13T12:44:20.578397+0900 DEBUG Processed 4 frames
+2025-06-13T12:44:20.579117+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:44:42.404506+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:44:42.404966+0900 INFO {
+  "id": "resp_684b9e94eb14819984cfa8101bbffa650e5a041aef750bb4",
+  "created_at": 1749786261.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9e98a6688199b8dabcd8c904c5dc0e5a041aef750bb4",
+      "summary": [
+        {
+          "text": "**Analyzing a potential accident**\n\nI need to carefully examine the frames of the situation. Frames 1-4 depict our vehicle driving in a lane with a blue van cutting right. In frame 4, a yellow taxi seems to pull out in front. As I look at frames 5-9, the vehicle approaches a crosswalk with pedestrians. By frame 8, a man is very close to the car, and in frame 9, he has his arms out, which might suggest he's about to be hit. I need to confirm if this indicates a collision.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ea9a8648199b33179d448dc766f0e5a041aef750bb4",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 541,
+    "output_tokens_details": {
+      "reasoning_tokens": 512
+    },
+    "total_tokens": 3406
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:44:42.405350+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:44:42.405639+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:44:42.405885+0900 DEBUG Completion tokens: 541
+2025-06-13T12:44:42.406127+0900 INFO Start extracting response
+2025-06-13T12:44:42.406442+0900 DEBUG Strip json response:
+2025-06-13T12:44:42.406702+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:44:42.406954+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/ped/03
+2025-06-13T12:44:42.407199+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/ped/03
+2025-06-13T12:44:42.474818+0900 DEBUG Processed 3 frames
+2025-06-13T12:44:42.475147+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:44:53.494114+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:44:53.494530+0900 INFO {
+  "id": "resp_684b9eaabf2c819aafa00d57fd48a63702b97b2df7f6c769",
+  "created_at": 1749786282.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9ead8b70819a96704f4ec1372acd02b97b2df7f6c769",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9eb4b12c819abcac507f0467228902b97b2df7f6c769",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"A\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 2411
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:44:53.494762+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "A"
+}
+```
+2025-06-13T12:44:53.494960+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:44:53.495117+0900 DEBUG Completion tokens: 221
+2025-06-13T12:44:53.495264+0900 INFO Start extracting response
+2025-06-13T12:44:53.495496+0900 DEBUG Strip json response:
+2025-06-13T12:44:53.495672+0900 DEBUG {'class': 'accident', 'accident_type': 'a'}
+2025-06-13T12:44:53.495854+0900 INFO Processing label: col, directory: data/wf/wl/collages-1fps-2-2/col
+2025-06-13T12:44:53.496108+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/08
+2025-06-13T12:44:53.496269+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/08
+2025-06-13T12:44:53.545368+0900 DEBUG Processed 2 frames
+2025-06-13T12:44:53.545721+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:45:02.717841+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:45:02.718343+0900 INFO {
+  "id": "resp_684b9eb5ce0c819b816f3d92be6df45606f6e911f3d7c992",
+  "created_at": 1749786293.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9eb7dc08819b9b6eaf231afc502906f6e911f3d7c992",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ebdee10819bb7b4d7b26f4763be06f6e911f3d7c992",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1515,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 1800
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:45:02.718745+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:45:02.719030+0900 DEBUG Prompt tokens: 1515
+2025-06-13T12:45:02.719298+0900 DEBUG Completion tokens: 285
+2025-06-13T12:45:02.719578+0900 INFO Start extracting response
+2025-06-13T12:45:02.719913+0900 DEBUG Strip json response:
+2025-06-13T12:45:02.720193+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:45:02.720477+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/01
+2025-06-13T12:45:02.720730+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/01
+2025-06-13T12:45:02.797443+0900 DEBUG Processed 3 frames
+2025-06-13T12:45:02.797835+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:45:13.281638+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:45:13.282096+0900 INFO {
+  "id": "resp_684b9ebf14bc819890c27d3ae73d6d3a0a700009ed63ed0e",
+  "created_at": 1749786303.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9ec34d88819884d855ab2b5151d00a700009ed63ed0e",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ec8c7948198a5d02e4ba4a3412d0a700009ed63ed0e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 2411
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:45:13.282436+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:45:13.282724+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:45:13.282965+0900 DEBUG Completion tokens: 221
+2025-06-13T12:45:13.283207+0900 INFO Start extracting response
+2025-06-13T12:45:13.283505+0900 DEBUG Strip json response:
+2025-06-13T12:45:13.283759+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:45:13.284003+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/04
+2025-06-13T12:45:13.284244+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/04
+2025-06-13T12:45:13.409443+0900 DEBUG Processed 5 frames
+2025-06-13T12:45:13.409761+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:45:41.688077+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:45:41.688481+0900 INFO {
+  "id": "resp_684b9eca2848819aa587fe5d20fa94be042e95047a9a8034",
+  "created_at": 1749786314.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9ed13e3c819ab704f425bda67972042e95047a9a8034",
+      "summary": [
+        {
+          "text": "**Analyzing accident frames**\n\nI'm looking at the frames to determine if an accident occurs. In frames 1-8, the scene shows a nighttime drive with parked vehicles. There's a red SUV on the right that the camera car passes by. By frame 8, it seems very close but appears fine. As I check frames 13-14, a white SUV seems to cross the road, possibly indicating a collision. In frame 14, it appears airborne\u2014maybe from hitting something? The wheels seem off the ground.",
+          "type": "summary_text"
+        },
+        {
+          "text": "**Assessing potential collision**\n\nI\u2019m considering that there could be an accident between two vehicles, with a white SUV possibly colliding. However, I need to check if the camera car is involved too. In frames 15-19, it appears the camera car turns right near the curb and may have hit a white coupe. \n\nFrom frames 13-14, it looks like the white SUV\u2019s position changes, and the camera car might have side-swiped it. For classification, it seems appropriate to categorize this as an accident of type B, since the accident only involves vehicles and not pedestrians.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ee39868819a9add7c5658d6d419042e95047a9a8034",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3540,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 669,
+    "output_tokens_details": {
+      "reasoning_tokens": 640
+    },
+    "total_tokens": 4209
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:45:41.688726+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:45:41.688910+0900 DEBUG Prompt tokens: 3540
+2025-06-13T12:45:41.689060+0900 DEBUG Completion tokens: 669
+2025-06-13T12:45:41.689242+0900 INFO Start extracting response
+2025-06-13T12:45:41.689476+0900 DEBUG Strip json response:
+2025-06-13T12:45:41.689644+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:45:41.689800+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/14
+2025-06-13T12:45:41.689980+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/14
+2025-06-13T12:45:41.793322+0900 DEBUG Processed 4 frames
+2025-06-13T12:45:41.794240+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:46:01.043508+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:46:01.043895+0900 INFO {
+  "id": "resp_684b9ee6420c819ab49aea808bf1d7a1021dc83f65136aaf",
+  "created_at": 1749786342.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9eec8900819aae3f6eec70af11c0021dc83f65136aaf",
+      "summary": [
+        {
+          "text": "**Interpreting traffic frames**\n\nI'm examining the frames of a traffic scenario with several cars. In the first four frames, the camera is positioned behind my vehicle, waiting at a red light. I see a white convertible slightly ahead in the left lane and a maroon sedan directly in front of me. As the frames progress, we're inching closer, and by frame 9, we're dangerously close to the maroon car. In frame 10, it appears that we might have collided since we're almost touching the rear of that car.",
+          "type": "summary_text"
+        },
+        {
+          "text": "**Analyzing frame details**\n\nIn frame 10, it looks like my vehicle's front hood is really close but hasn\u2019t collided yet since there\u2019s still a small gap. The white car in the left lane drifts in front of me without making contact. In frames 11-12, the white car approaches the maroon car closely, and I wonder if there's a side swipe. However, it passes behind the maroon car without any crash. No pedestrians are visible, so it seems there's no accident. I\u2019ll classify it as \"Normal,\" with no accident type, and prepare JSON.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9ef86894819a87a2be1987fce65e021dc83f65136aaf",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 476,
+    "output_tokens_details": {
+      "reasoning_tokens": 448
+    },
+    "total_tokens": 3341
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:46:01.044148+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:46:01.044325+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:46:01.044513+0900 DEBUG Completion tokens: 476
+2025-06-13T12:46:01.044676+0900 INFO Start extracting response
+2025-06-13T12:46:01.044862+0900 DEBUG Strip json response:
+2025-06-13T12:46:01.045018+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:46:01.045173+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/10
+2025-06-13T12:46:01.045317+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/10
+2025-06-13T12:46:01.107065+0900 DEBUG Processed 3 frames
+2025-06-13T12:46:01.107592+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:46:15.295047+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:46:15.295514+0900 INFO {
+  "id": "resp_684b9ef9a7b4819abe19d2b34f48d4a90195939829d62a05",
+  "created_at": 1749786361.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9efd54e4819a9e4bbb3574808feb0195939829d62a05",
+      "summary": [
+        {
+          "text": "**Assessing vehicle interaction**\n\nI'm reviewing frames 10 and 11 to see if a black convertible collides with another vehicle. So far, I don't notice any contact; the vehicles seem to stay in their lanes. I suspect there hasn't been an accident. Let\u2019s analyze it step by step:\n\nFirst, I\u2019m looking for direct contact between vehicles. The frames show them at a distance, with no signs of damage or collision. The ego vehicle is calm, with no debris in sight. Therefore, I\u2019ll classify the situation as \"Normal\" with \"Accident_type\": \"None\" and prepare the JSON response accordingly.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f06bbc0819a8dd5f2f514d4d3420195939829d62a05",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Normal\",\n  \"Accident_type\": \"None\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 348,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 2538
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:46:15.295868+0900 DEBUG ```json
+{
+  "Class": "Normal",
+  "Accident_type": "None"
+}
+```
+2025-06-13T12:46:15.296136+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:46:15.296397+0900 DEBUG Completion tokens: 348
+2025-06-13T12:46:15.296653+0900 INFO Start extracting response
+2025-06-13T12:46:15.296959+0900 DEBUG Strip json response:
+2025-06-13T12:46:15.297227+0900 DEBUG {'class': 'normal', 'accident_type': 'none'}
+2025-06-13T12:46:15.297510+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/09
+2025-06-13T12:46:15.297761+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/09
+2025-06-13T12:46:15.389045+0900 DEBUG Processed 4 frames
+2025-06-13T12:46:15.390230+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:46:31.062567+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:46:31.062926+0900 INFO {
+  "id": "resp_684b9f07b26c819ba870d9f3cd3fe51a02437e15738ba4da",
+  "created_at": 1749786375.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f0b905c819bacfe0da80e8feac602437e15738ba4da",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f167f24819bad6e720906c0e2c702437e15738ba4da",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 477,
+    "output_tokens_details": {
+      "reasoning_tokens": 448
+    },
+    "total_tokens": 3342
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:46:31.063127+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:46:31.063280+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:46:31.063440+0900 DEBUG Completion tokens: 477
+2025-06-13T12:46:31.063581+0900 INFO Start extracting response
+2025-06-13T12:46:31.063757+0900 DEBUG Strip json response:
+2025-06-13T12:46:31.063920+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:46:31.064065+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/12
+2025-06-13T12:46:31.064202+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/12
+2025-06-13T12:46:31.122207+0900 DEBUG Processed 2 frames
+2025-06-13T12:46:31.123142+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:46:38.476282+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:46:38.476648+0900 INFO {
+  "id": "resp_684b9f17626c819bbd1d7613b5dcbf080992b0d24a694335",
+  "created_at": 1749786391.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f194ca4819b94360bd26d2eac3d0992b0d24a694335",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f1dd814819ba7b98515669b3a500992b0d24a694335",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1515,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 1672
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:46:38.476907+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:46:38.477065+0900 DEBUG Prompt tokens: 1515
+2025-06-13T12:46:38.477251+0900 DEBUG Completion tokens: 157
+2025-06-13T12:46:38.477421+0900 INFO Start extracting response
+2025-06-13T12:46:38.477638+0900 DEBUG Strip json response:
+2025-06-13T12:46:38.477813+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:46:38.478043+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/07
+2025-06-13T12:46:38.478271+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/07
+2025-06-13T12:46:38.549616+0900 DEBUG Processed 3 frames
+2025-06-13T12:46:38.550647+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:46:50.823523+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:46:50.823905+0900 INFO {
+  "id": "resp_684b9f1ed880819a93d13fb71fd1bee608069ec379f6ee25",
+  "created_at": 1749786399.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f2258a4819a8e023a9c12c1343c08069ec379f6ee25",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f2a4748819abe0667eb7128f0a308069ec379f6ee25",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 285,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 2475
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:46:50.824122+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:46:50.824288+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:46:50.824457+0900 DEBUG Completion tokens: 285
+2025-06-13T12:46:50.824651+0900 INFO Start extracting response
+2025-06-13T12:46:50.824843+0900 DEBUG Strip json response:
+2025-06-13T12:46:50.825000+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:46:50.825158+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/06
+2025-06-13T12:46:50.825311+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/06
+2025-06-13T12:46:50.881585+0900 DEBUG Processed 2 frames
+2025-06-13T12:46:50.882965+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:46:58.495047+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:46:58.495499+0900 INFO {
+  "id": "resp_684b9f2b6de4819995b9e0cb94b427030bc6585663495679",
+  "created_at": 1749786411.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f2da5748199b8f83a02926c5de10bc6585663495679",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f31b9cc81998035e62d303b59850bc6585663495679",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1515,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 1672
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:46:58.495897+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:46:58.496223+0900 DEBUG Prompt tokens: 1515
+2025-06-13T12:46:58.496504+0900 DEBUG Completion tokens: 157
+2025-06-13T12:46:58.496708+0900 INFO Start extracting response
+2025-06-13T12:46:58.496995+0900 DEBUG Strip json response:
+2025-06-13T12:46:58.497239+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:46:58.497523+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/15
+2025-06-13T12:46:58.497800+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/15
+2025-06-13T12:46:58.591601+0900 DEBUG Processed 4 frames
+2025-06-13T12:46:58.592440+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:47:09.645319+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:47:09.645705+0900 INFO {
+  "id": "resp_684b9f32eb24819bb26ce0cffa6675080c1e3fcc675b20f5",
+  "created_at": 1749786419.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f37872c819b9951f5bd6a93a0a00c1e3fcc675b20f5",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f3c8ca8819ba4595aaf85e3ba4e0c1e3fcc675b20f5",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 3022
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:47:09.645969+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:47:09.646143+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:47:09.646306+0900 DEBUG Completion tokens: 157
+2025-06-13T12:47:09.646474+0900 INFO Start extracting response
+2025-06-13T12:47:09.646662+0900 DEBUG Strip json response:
+2025-06-13T12:47:09.646818+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:47:09.646975+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/11
+2025-06-13T12:47:09.647123+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/11
+2025-06-13T12:47:09.686092+0900 DEBUG Processed 2 frames
+2025-06-13T12:47:09.686417+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:47:17.067857+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:47:17.068570+0900 INFO {
+  "id": "resp_684b9f3ddf7c81999e13e96db4c0aefd05f47428a429c84f",
+  "created_at": 1749786430.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f40d7f08199a520231b93430d9d05f47428a429c84f",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f441e6c8199aacec1f5860bbf0905f47428a429c84f",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1515,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 157,
+    "output_tokens_details": {
+      "reasoning_tokens": 128
+    },
+    "total_tokens": 1672
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:47:17.068807+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:47:17.068977+0900 DEBUG Prompt tokens: 1515
+2025-06-13T12:47:17.069137+0900 DEBUG Completion tokens: 157
+2025-06-13T12:47:17.069286+0900 INFO Start extracting response
+2025-06-13T12:47:17.069499+0900 DEBUG Strip json response:
+2025-06-13T12:47:17.069662+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:47:17.069822+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/13
+2025-06-13T12:47:17.069972+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/13
+2025-06-13T12:47:17.117651+0900 DEBUG Processed 2 frames
+2025-06-13T12:47:17.117971+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:47:31.923234+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:47:31.923628+0900 INFO {
+  "id": "resp_684b9f455fdc819baac1bb4943ca6c7e06c23e5f72d81a3e",
+  "created_at": 1749786437.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f47aaf8819baf8003f7af90bd4a06c23e5f72d81a3e",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f535b18819bbb72e000e9cf2c0706c23e5f72d81a3e",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1515,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 349,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 1864
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:47:31.923843+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:47:31.923998+0900 DEBUG Prompt tokens: 1515
+2025-06-13T12:47:31.924155+0900 DEBUG Completion tokens: 349
+2025-06-13T12:47:31.924300+0900 INFO Start extracting response
+2025-06-13T12:47:31.924497+0900 DEBUG Strip json response:
+2025-06-13T12:47:31.924651+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:47:31.924803+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/02
+2025-06-13T12:47:31.924944+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/02
+2025-06-13T12:47:32.054542+0900 DEBUG Processed 6 frames
+2025-06-13T12:47:32.054856+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:47:47.376432+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:47:47.376817+0900 INFO {
+  "id": "resp_684b9f546bcc8199a502ca8c9b6f563f01c249ee0c5e2a67",
+  "created_at": 1749786452.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f5999a881999a1544cecca70b6801c249ee0c5e2a67",
+      "summary": [
+        {
+          "text": "**Analyzing potential collision frames**\n\nI need to inspect frames 1 through 21 to see if a collision occurs. The viewpoint is from the front of the ego vehicle. In frames 1-4, everything seems normal with a green light as a white car passes in front. By frames 5-8, that white car is moving away. As we continue down the road in frames 9-16, there are parked cars in both lanes, and a yellow car passes. In frames 17-20, a red mini is parked near a bus stop. By frame 21, it looks like the red mini extends into our lane, potentially leading to a collision as the ego vehicle approaches.",
+          "type": "summary_text"
+        }
+      ],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f6252a881998dcc8315db6fbce301c249ee0c5e2a67",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 4215,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 349,
+    "output_tokens_details": {
+      "reasoning_tokens": 320
+    },
+    "total_tokens": 4564
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:47:47.377058+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:47:47.377223+0900 DEBUG Prompt tokens: 4215
+2025-06-13T12:47:47.377422+0900 DEBUG Completion tokens: 349
+2025-06-13T12:47:47.377578+0900 INFO Start extracting response
+2025-06-13T12:47:47.377762+0900 DEBUG Strip json response:
+2025-06-13T12:47:47.377917+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:47:47.378071+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/05
+2025-06-13T12:47:47.378214+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/05
+2025-06-13T12:47:47.464449+0900 DEBUG Processed 4 frames
+2025-06-13T12:47:47.464755+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:48:05.881792+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:48:05.882163+0900 INFO {
+  "id": "resp_684b9f63c8e0819ab6a3a684119583b50f579e3bc68506f5",
+  "created_at": 1749786467.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f6965a4819a925cd3fbfbcae2f40f579e3bc68506f5",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f753810819a90e19781547b046f0f579e3bc68506f5",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2865,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 541,
+    "output_tokens_details": {
+      "reasoning_tokens": 512
+    },
+    "total_tokens": 3406
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:48:05.882390+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:48:05.882567+0900 DEBUG Prompt tokens: 2865
+2025-06-13T12:48:05.882720+0900 DEBUG Completion tokens: 541
+2025-06-13T12:48:05.882868+0900 INFO Start extracting response
+2025-06-13T12:48:05.883058+0900 DEBUG Strip json response:
+2025-06-13T12:48:05.883212+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:48:05.883363+0900 INFO Processing subfolder: data/wf/wl/collages-1fps-2-2/col/03
+2025-06-13T12:48:05.883592+0900 INFO Start processing frames from directory: data/wf/wl/collages-1fps-2-2/col/03
+2025-06-13T12:48:05.947296+0900 DEBUG Processed 3 frames
+2025-06-13T12:48:05.947631+0900 INFO Start calling OpenAI API using Responses API...
+2025-06-13T12:48:15.600572+0900 INFO --- Full OpenAI Responses API Response (JSON) ---
+2025-06-13T12:48:15.601034+0900 INFO {
+  "id": "resp_684b9f7635bc819882cbe1da630b1aee0b09160bc368cf30",
+  "created_at": 1749786486.0,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": null,
+  "metadata": {},
+  "model": "o3-2025-04-16",
+  "object": "response",
+  "output": [
+    {
+      "id": "rs_684b9f78c0408198a7dd49f03b4aa3db0b09160bc368cf30",
+      "summary": [],
+      "type": "reasoning",
+      "encrypted_content": null,
+      "status": null
+    },
+    {
+      "id": "msg_684b9f7ed01081989cbdb98b2d64f9f40b09160bc368cf30",
+      "content": [
+        {
+          "annotations": [],
+          "text": "```json\n{\n  \"Class\": \"Accident\",\n  \"Accident_type\": \"B\"\n}\n```",
+          "type": "output_text",
+          "logprobs": null
+        }
+      ],
+      "role": "assistant",
+      "status": "completed",
+      "type": "message"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1.0,
+  "background": false,
+  "max_output_tokens": null,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "generate_summary": null,
+    "summary": "detailed"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2190,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 221,
+    "output_tokens_details": {
+      "reasoning_tokens": 192
+    },
+    "total_tokens": 2411
+  },
+  "user": null,
+  "store": false
+}
+2025-06-13T12:48:15.601286+0900 DEBUG ```json
+{
+  "Class": "Accident",
+  "Accident_type": "B"
+}
+```
+2025-06-13T12:48:15.601514+0900 DEBUG Prompt tokens: 2190
+2025-06-13T12:48:15.601704+0900 DEBUG Completion tokens: 221
+2025-06-13T12:48:15.601888+0900 INFO Start extracting response
+2025-06-13T12:48:15.602129+0900 DEBUG Strip json response:
+2025-06-13T12:48:15.602319+0900 DEBUG {'class': 'accident', 'accident_type': 'b'}
+2025-06-13T12:48:15.612948+0900 INFO Confusion Matrix:
+2025-06-13T12:48:15.613272+0900 INFO [[30  0  0]
+ [ 0 14  1]
+ [ 2  0 13]]
+2025-06-13T12:48:15.613759+0900 INFO Classification Report:
+2025-06-13T12:48:15.613959+0900 INFO                      precision    recall  f1-score   support
+
+             Normal       0.94      1.00      0.97        30
+Pedestrian Accident       1.00      0.93      0.97        15
+          Collision       0.93      0.87      0.90        15
+
+           accuracy                           0.95        60
+          macro avg       0.96      0.93      0.94        60
+       weighted avg       0.95      0.95      0.95        60
+
+2025-06-13T12:48:15.614440+0900 DEBUG Total Input tokens: 170550
+2025-06-13T12:48:15.614662+0900 DEBUG Total Output tokens: 18540
